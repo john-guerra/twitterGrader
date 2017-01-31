@@ -1,0 +1,20 @@
+.tweet {
+	margin: 30px;
+}
+.profile_pic {
+	width:5%;
+	float:left;
+}
+.text {
+	float:left;
+	width: 80%;
+	margin-left: 10px;
+}
+.user_name {
+	clear:both;
+	font-weight: bold;
+}
+
+h1 {
+	margin: 30px;
+}
