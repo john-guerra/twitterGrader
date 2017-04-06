@@ -8,22 +8,22 @@ import Tweet from './Tweet.jsx';
 
 class App extends Component {
 	renderTweets() {
-		console.log("render");
 		// console.log(Tweets.find().fetch());
 		return this.props.tweets.map((t) => (
 			<Tweet key={t._id} tweet={t} />
 		));
 	}
 
-	addTweet(event) {
-		event.preventDefault();
-		console.log(this);
-		Tweets.insert({
-			"id": this.refs.id.value.trim(),
-			"name":this.refs.name.value.trim()
-		})
-	}
+	// addTweet(event) {
+	// 	event.preventDefault();
+	// 	console.log(this);
+	// 	Tweets.insert({
+	// 		"id": this.refs.id.value.trim(),
+	// 		"name":this.refs.name.value.trim()
+	// 	})
+	// }
 	render() {
+		console.log("Render");
 		console.log(this.props);
 		return (
 			<div>
@@ -31,6 +31,7 @@ class App extends Component {
 				<div>
 					{this.renderTweets()}
 				</div>
+			{/*
 				<form onSubmit={this.addTweet.bind(this)}>
 					<input type="text"
 						ref="id"/>
@@ -39,6 +40,7 @@ class App extends Component {
 						placeholder="name"/>
 					<input type="submit" value="submit"/>
 				</form>
+			*/}
 			</div>
 			);
 	}

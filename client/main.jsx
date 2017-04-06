@@ -3,8 +3,6 @@ import {Meteor} from 'meteor/meteor';
 import {render} from 'react-dom';
 
 
-// Tweets = new Mongo.Collection("tweets");
-
 import App from '../imports/ui/App.jsx'
 
 Meteor.startup(() => {

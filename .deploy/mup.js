@@ -11,7 +11,7 @@ module.exports = {
   },
 
   meteor: {
-    name: 'twitterGrader',
+    name: 'tweetometro',
     path: '../',
     servers: {
       one: {}
